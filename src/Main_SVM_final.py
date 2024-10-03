@@ -40,6 +40,7 @@ def train_model(data_directory):
     print(classification_report(y_test, y_pred))
     return model
 
+#Spotted Lawww
 def predict(model, file_path):
     feature = extract_features(file_path)
     probabilities = model.predict_proba([feature])[0]
